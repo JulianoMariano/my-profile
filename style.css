@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  --bg-color: rgb(152, 177, 253);
+  --bg-ul:hsl(240, 90%, 50%);
+  --fc-text: rgba(0, 8, 47, 1);
+  --img-border: hsl(234, 80%, 50%);
+
+  font-size: 62.5%;
+  text-align: center;
+  width: 20rem;
+  margin: 2.5rem auto 0;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+}
+
+#imgProfile {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  box-shadow: 
+  0 0 0 .2rem hsl(0, 0%, 100%),
+  0 0 0 .4rem var(--img-border);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--fc-text);
+  padding: 2rem 0 1rem;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+#myForm ul {
+  list-style-type: none;
+}
+
+#myForm ul li {
+  padding-bottom: 1rem;
+}
+
+ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--fc-text);
+
+  text-decoration: none;
+
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .8rem;
+  border: .2rem solid var(--img-border);
+
+  transition: background 200ms;
+}
+
+ul li a:hover {
+  background-color: var(--bg-ul);
+}
